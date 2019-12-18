@@ -40,7 +40,7 @@ C4 模型由一系列分层的软件架构图组成，这些架构图用于描�
 本库的目的是美化PlantUml和C4 Model所绘制系统架构图的样式，统一审美而产生。
 
 详细的使用方法，可参考sample文件夹中的示例代码
-[https://github.com/xuanye/plantuml-style-c4/blob/master/samples/](https://github.com/xuanye/plantuml-style-c4/blob/master/samples/)
+[https://github.com/karellincoln/plantuml-style-c4/blob/master/samples/](https://github.com/karellincoln/plantuml-style-c4/blob/master/samples/)
 
 <!--more-->
 
@@ -88,9 +88,9 @@ deactivate first
 ```
 @startuml 示例类图
 
-!includeurl https://raw.githubusercontent.com/xuanye/plantuml-style-c4/master/core.puml
+' !includeurl https://raw.githubusercontent.com/karellincoln/plantuml-style-c4/master/core.puml
 ' uncomment the following line and comment the first to use locally
-'!include core.puml
+!include core.puml
 
 GREY_ARROW
 
@@ -127,9 +127,9 @@ IInterfaceA <|-- "IInterfaceA`1"
 
 ```
 @startuml state-sample
-!includeurl https://raw.githubusercontent.com/xuanye/plantuml-style-c4/master/core.puml
+' !includeurl https://raw.githubusercontent.com/karellincoln/plantuml-style-c4/master/core.puml
 ' uncomment the following line and comment the first to use locally
-'!include core.puml
+!include core.puml
 
 GREEN_ARROW
 
@@ -172,9 +172,9 @@ Chunked --> [*] : Ok
 
 ```
 @startuml usecase-sample
-!includeurl https://raw.githubusercontent.com/xuanye/plantuml-style-c4/master/core.puml
+' !includeurl https://raw.githubusercontent.com/karellincoln/plantuml-style-c4/master/core.puml
 ' uncomment the following line and comment the first to use locally
-'!include core.puml
+!include core.puml
 
 ' 设置方向
 LAYOUT_LEFT_RIGHT
@@ -204,9 +204,9 @@ UserCasePackage("checkout","买单") {
 
 ```
 @startuml activity-new-sample
-!includeurl https://raw.githubusercontent.com/xuanye/plantuml-style-c4/master/core.puml
+' !includeurl https://raw.githubusercontent.com/karellincoln/plantuml-style-c4/master/core.puml
 ' uncomment the following line and comment the first to use locally
-'!include core.puml
+!include core.puml
 
 GREEN_ARROW
 
@@ -251,9 +251,9 @@ stop
 
 ```
 @startuml element
-!includeurl https://raw.githubusercontent.com/xuanye/plantuml-style-c4/master/core.puml
+' !includeurl https://raw.githubusercontent.com/karellincoln/plantuml-style-c4/master/core.puml
 ' uncomment the following line and comment the first to use locally
-'!include core.puml
+!include core.puml
 
 
 actor actor
@@ -285,14 +285,14 @@ usecase usecase
 
 ## C4 模型
 
-### 1.System Context 
+### 1.System Context
 
 ```
 @startuml system-context-diagram
 
-!includeurl https://raw.githubusercontent.com/xuanye/plantuml-style-c4/master/c4_context.puml
+' !includeurl https://raw.githubusercontent.com/karellincoln/plantuml-style-c4/master/c4_context.puml
 ' uncomment the following line and comment the first to use locally
-'!include c4_context.puml
+!include c4_context.puml
 
 LAYOUT_WITH_LEGEND
 
@@ -316,13 +316,13 @@ Rel(banking_system, mainframe, "Uses")
 ![System Context](https://www.plantuml.com/plantuml/png/VL7DRjf04BxxAQPSe1BWIquzXQIeZHJIg11LFLd3Ck0L-sFjpXRyzXqRcq9AU_FkVl--Zuo1apNP1-sKIHjAmK39NCLFUHxmCDrfBjCwHGhAEoR7K-LjVapeQiehWwvXJoBNXYRgBhSOcKAkxeeMVkHfrQWF8JdXMU43bmHRRum_QBS3enq1kWrSFUiGvSk3-8Bn2esfis4V4TwhPyFdsSzlRwlYnzFgQ_4y_p9_-PnbhDaGB6i9PE7nX8UDnbr02riVu4ckWYE61tHxoT9Xisocs8UHIf6zfJ26mIk5w1sQC_AnUnl8umnw9FXj6tyjg34SP3ceUcPp1wYKJuxZTF0nEvcDrYV58hP7aVj7gjQf6IsUxMApq2zD1z1E-bXaxHtWsgTsHHskJSVjp1Rt11NMbheSNP1YVkIHHMt-99bFcZF4i_-g9B5Y2asXXLR1Hxzbc1zLYMv7G9S4qNudxRQoF8dEel--qN4fqrC4DAPVKya5T3FTQ7fUOtpHb0EwYAg1oObOjKs_axdugtyj_nOf2anGnGEg_GNqUfSbkKtioZR_eEEyaDwLQnz6ryB_PRUD5wlNayGjPZzQd-vUwCcQtm00)
 
 
-### 2. Container 
+### 2. Container
 
 ```
 @startuml container-diagram
-!includeurl https://raw.githubusercontent.com/xuanye/plantuml-style-c4/master/c4_container.puml
+' !includeurl https://raw.githubusercontent.com/karellincoln/plantuml-style-c4/master/c4_container.puml
 ' uncomment the following line and comment the first to use locally
-'!include c4_container.puml
+!include c4_container.puml
 
 LAYOUT_TOP_DOWN
 'LAYOUT_AS_SKETCH
@@ -370,9 +370,9 @@ Rel_Neighbor(backend_api, banking_system, "Uses", "sync/async, XML/HTTPS")
 
 ```
 @startuml component-diagram
-!includeurl https://raw.githubusercontent.com/xuanye/plantuml-style-c4/master/c4_component.puml
+' !includeurl https://raw.githubusercontent.com/karellincoln/plantuml-style-c4/master/c4_component.puml
 ' uncomment the following line and comment the first to use locally
-'!include c4_component.puml
+!include c4_component.puml
 
 LAYOUT_WITH_LEGEND
 
@@ -407,16 +407,16 @@ Rel(ma, accounts, "Uses", "JSON/HTTPS")
 ![组件图](https://www.plantuml.com/plantuml/img/fLLDKzim4BtxLsnpA646oAMddXe2BL1e6HpwSSgivOsZLXyUIIRDTFhVkv8Jsm6cmqnpYRnQxRvzxyb-vmEwq6W5mkhQ6ZBXk9HOETJPAsc4Qafgd89L2BL_EvauN9zKCgoQel7aX3M1JvpmsScl1is69hL24-iT-x1HT2pUJ3JwG6uYtYow5YSrPsG7q1WEQGv0M14ihL9sBKq5IXe2D2NiRKldUMM1EuEo0fNQP0SxaF2qVdPmFVt--Nw--7evlrXSdtyu_tJMnQRv8lzuFfzTP5cGGH7CTeTXEp_ZSN390pf30KxH_8pGyWrFe-4OfhUNCArh9GK6QKsMpPWCPE1kx6iyWb7EwLpt5YiQ9evuwmS-e1TErY5DYQPg5BguS-liWop90q-NffOx0CKMm999YtLGoR29T8Z61wl9UNYG6Cz81sige71spHgTZ0u7q7H4TcCBgHAesF8RQdJIx7Td2RGCL89l2i_TRVWFDBhjj_qhwK4AseDrLepBWlkVOS02FKKiTwImhGoxCEHYHHhZRXwiOvpHXE2eaZwubCq8MJQTraUmGh_Y6R1X72Pi1G3Xg8oFgFmHe13aFVkfuWSA8k9gDLwS_mfZNVX86ADSiYNeaGq6IA9UTfb84Xpe21hW0Ini4tg6KdFRcC0hXcyy9Yfx73r1YrFEAz5jnbXBRlh8VAD3-9q1_peJZxsiJ39XPTZ442ivlb-KN7RpPGPtnBUf2yVeD5w_bbCVfOmb67zSFgkzRpauVDIv7seqtIuXRpIRRFCY69q9Uokj-Ot3dlHSnNALbcSsLaJIaVW4Y2VHEBPbf66xx7UJTBMBSvmIxhj_tzGk6f5Tb1WnLIlg4OWLjWyrUh-shknrsuV15bgYm9B-OIHudpAU0JM5zZ0mHQqEkgknBqHoJ6pDDsSh_u21UqyxXk9-Bz8GtgEa_dYwdNU49Ro6DOU8sOZehivEPuC3WrhjnKa5uplcvdfoCP_Vvfpy9yjIyVYItBfqbtQLV_xKvNL90qCzcvWozGkgwPSKUqUcvA_7Nm00)
 
 
-### 4 Code 
+### 4 Code
 类图上面已经演示过了
 
 ### 5. 扩展图
 
 ```
 @startuml system-context-extend-diagram
-!includeurl https://raw.githubusercontent.com/xuanye/plantuml-style-c4/master/c4_context.puml
+' !includeurl https://raw.githubusercontent.com/karellincoln/plantuml-style-c4/master/c4_context.puml
 ' uncomment the following line and comment the first to use locally
-'!include c4_context.puml
+!include c4_context.puml
 
 'LAYOUT_TOP_DOWN
 'LAYOUT_AS_SKETCH

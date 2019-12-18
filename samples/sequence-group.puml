@@ -1,14 +1,14 @@
 @startuml sequence-group
-!includeurl https://raw.githubusercontent.com/xuanye/plantuml-style-c4/master/core.puml
+' !includeurl https://raw.githubusercontent.com/karellincoln/plantuml-style-c4/master/core.puml
 ' uncomment the following line and comment the first to use locally
-'!include core.puml
+!include ../core.puml
 
 Alice -> Bob: Authentication Request12
 
 alt successful case
 
 	Bob -> Alice: Authentication Accepted2
-	
+
 else some kind of failure
 
 	Bob -> Alice: Authentication Failure
@@ -19,10 +19,10 @@ else some kind of failure
 	    end
 		Alice -> Log : Log attack end
 	end
-	
+
 else Another type of failure
 
    Bob -> Alice: Please repeat
-   
+
 end
 @enduml

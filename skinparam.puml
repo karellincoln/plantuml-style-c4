@@ -1,7 +1,7 @@
 @startuml override-skin
-!includeurl https://raw.githubusercontent.com/xuanye/plantuml-style-c4/master/colors.puml
+' !includeurl https://raw.githubusercontent.com/karellincoln/plantuml-style-c4/master/colors.puml
 ' uncomment the following line and comment the first to use locally
-'!include colors.puml
+!include colors.puml
 
 
 
@@ -104,7 +104,7 @@ skinparam Class {
     StereotypeFontColor DC_7
     'StereotypeFontName
     StereotypeFontSize 14
-    'StereotypeFontStyle  
+    'StereotypeFontStyle
 }
 
 
@@ -159,18 +159,18 @@ skinparam UseCase {
     ActorBackgroundColor EL_BG_COLOR_800
     ActorBorderColor MD_BLUE_900
     ActorShadowing false
- 
+
 }
 
 
 skinparam State {
-    'FontColor          MD_BLUE_600   
+    'FontColor          MD_BLUE_600
     FontSize           17
 
     'AttributeFontColor MD_BLUE_300
     AttributeFontSize  14
     'AttributeFontname  Droid Sans Mono
-    
+
     BackgroundColor    MD_BLUE_100
     BorderColor        MD_BLUE_200
     StartColor Green
@@ -250,7 +250,7 @@ skinparam File {
 skinparam Folder {
     BackgroundColor MD_BLUE_50
     BorderColor MD_GRAY_800
-   
+
 }
 skinparam Frame {
     BackgroundColor MD_BLUE_50
