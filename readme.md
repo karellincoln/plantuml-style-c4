@@ -26,6 +26,20 @@ Alice <-- Bob: another authentication Response
 
 想了解更多PlantUml或者使用方法，可参考官网[http://plantuml.com/zh/](http://plantuml.com/zh/)，上面详细的中英文说明
 
+
+## Snippets for Visual Studio Code
+
+Because the PlantUML support inside of Visual Studio Code is excellent with the [PlantUML extension](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml), you can also find VS Code snippets for C4-PlantUML at [.vscode/C4.code-snippets](.vscode/C4.code-snippets).
+
+Project level snippets are now supported in [VSCode 1.28](https://code.visualstudio.com/updates/v1_28#_project-level-snippets).
+Just include the `C4.code-snippets` file in the `.vscode` folder of your project.
+
+It is possible to save them directly inside VS Code: [Creating your own snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_creating-your-own-snippets).
+
+![C4-PlantUML Snippets Video](images/vscode_c4plantuml_snippets.gif)
+
+
+
 ## 什么是C4 Model
 [C4 Model](https://c4model.com/) 在我眼里更像是一个标准，一个方法论。让架构师、程序员、业务人员在讨论IT系统架构时候统一维度，统一标准，更方便的理解和沟通IT系统中的真实问题。**强烈推荐**！！！
 
