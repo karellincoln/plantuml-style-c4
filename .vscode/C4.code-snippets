@@ -194,6 +194,24 @@
 		],
 		"description": "Add hidden layout line to put {to} to the left of {from}"
 	},
+	"C4_Layout_UP": {
+		"scope": "diagram",
+		"prefix": "Layout to UP side",
+		"body": [
+			"Lay_U(${1:from_alias}, ${2:to_alias})",
+			"$0"
+		],
+		"description": "Add hidden layout line to put {to} to the UP of {from}"
+	},
+	"C4_Layout_DOWN": {
+		"scope": "diagram",
+		"prefix": "Layout to DOWN side",
+		"body": [
+			"Lay_D(${1:from_alias}, ${2:to_alias})",
+			"$0"
+		],
+		"description": "Add hidden layout line to put {to} to the DOWN of {from}"
+	},
 	"C4_Boundary": {
 		"scope": "diagram",
 		"prefix": "Boundary",
@@ -215,5 +233,85 @@
 			"}"
 		],
 		"description": "Add a generic boundary to C4 diagram."
-	}
+	},
+	"C4_startuml": {
+		"scope": "diagram",
+		"prefix": [
+			"startuml"
+		],
+		"body": [
+			"@startuml $1",
+			"$0",
+			"@enduml"
+		],
+		"description": "start uml"
+	},
+	"C4_GREEN_ARROW": {
+		"scope": "diagram",
+		"prefix": [
+			"green arrow"
+		],
+		"body": [
+			"GREEN_ARROW",
+			"$1"
+		],
+		"description": "使用绿色箭头"
+	},
+	"C4_RED_ARROW": {
+		"scope": "diagram",
+		"prefix": [
+			"red arrow"
+		],
+		"body": [
+			"RED_ARROW",
+			"$1"
+		],
+		"description": "使用红色箭头"
+	},
+	"C4_MEGENTA_ARROW": {
+		"scope": "diagram",
+		"prefix": [
+			"megenta arrow"
+		],
+		"body": [
+			"MEGENTA_ARROW",
+			"$1"
+		],
+		"description": "使用酒红色箭头"
+	},
+	"C4_GREY_ARROW": {
+		"scope": "diagram",
+		"prefix": [
+			"grey arrow"
+		],
+		"body": [
+			"GREY_ARROW",
+			"$1"
+		],
+		"description": "使用灰色箭头"
+	},
+	"C4_YELLOW_ARROW": {
+		"scope": "diagram",
+		"prefix": [
+			"yellow arrow"
+		],
+		"body": [
+			"YELLOW_ARROW",
+			"$1"
+		],
+		"description": "使用黄色箭头"
+	},
+	"C4_SiGNATURE": {
+		"scope": "diagram",
+		"prefix": [
+			"signature",
+			"签名"
+		],
+		"body": [
+			"SiGNATURE(\"$1\")",
+			"drawFooter()",
+			"$2"
+		],
+		"description": "签名"
+	},
 }

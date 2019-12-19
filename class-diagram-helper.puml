@@ -3,8 +3,8 @@
 
 !define CLASS_LINE_FONT_SIZE 12
 
-!define Link_(e_alias1, e_alias2, e_label, e_direction="") e_alias1 e_direction e_alias2 : "e_label"
-!define Link_(e_alias1, e_alias2, e_label, e_techn, e_direction="") e_alias1 e_direction e_alias2 : "e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//"
+!define Link_(e_alias1, e_alias2, e_label, e_direction="") "e_alias1" e_direction "e_alias2" : "e_label"
+!define Link_(e_alias1, e_alias2, e_label, e_techn, e_direction="") "e_alias1" e_direction "e_alias2" : "e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//"
 
 !define Link(e_from,e_to, e_label) Link_(e_from,e_to, e_label, "-->")
 !define Link(e_from,e_to, e_label, e_techn) Link_(e_from,e_to, e_label, e_techn, "-->")
@@ -18,14 +18,14 @@
 
 
 
-' 实现 
+' 实现
 !define Realize(e_from,e_to, e_label) Link_(e_from,e_to, e_label, "..|>")
 !define Realize(e_from,e_to, e_label, e_techn) Link_(e_from,e_to, e_label, e_techn, "..|>")
 !define RealizeBack(e_from,e_to, e_label) Link_(e_from,e_to, e_label, "<|..")
 !define RealizeBack(e_from,e_to, e_label, e_techn) Link_(e_from,e_to, e_label, e_techn, "<|..")
 
 
-' 聚合 
+' 聚合
 !define Aggregation(e_from,e_to, e_label) Link_(e_from,e_to, e_label, "--o")
 !define Aggregation(e_from,e_to, e_label, e_techn) Link_(e_from,e_to, e_label, e_techn, "--o")
 !define AggregationBack(e_from,e_to, e_label) Link_(e_from,e_to, e_label, "o--")

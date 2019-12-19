@@ -22,7 +22,7 @@ skinparam handwritten true
 
 
 !function SiGNATURE($date="2019")
-!$footer_msg = $footer_msg + "Copyright (c) Huawei Technologies Co., Ltd. 2019-2019. All rights reserved.\n" + "詹逸祖 drawed in " + $date
+!$footer_msg = $footer_msg + "Copyright (c) Huawei Technologies Co., Ltd. 2019-2019. All rights reserved.\n" + "詹逸祖 drawed in " + $date + "\n"
 !endfunction
 
 !function drawFooter()
@@ -38,10 +38,10 @@ right footer $footer_msg
 
 
 ' help layer
-!define Lay_D(e_from, e_to) e_from -[hidden]D- e_to
-!define Lay_U(e_from, e_to) e_from -[hidden]U- e_to
-!define Lay_R(e_from, e_to) e_from -[hidden]R- e_to
-!define Lay_L(e_from, e_to) e_from -[hidden]L- e_to
+!define Lay_D(e_from, e_to) "e_from" -[hidden]D- "e_to"
+!define Lay_U(e_from, e_to) "e_from" -[hidden]U- "e_to"
+!define Lay_R(e_from, e_to) "e_from" -[hidden]R- "e_to"
+!define Lay_L(e_from, e_to) "e_from" -[hidden]L- "e_to"
 
 
 !define UserCasePackage(e_alias, e_label) rectangle "==e_label" <<usercase>> as e_alias

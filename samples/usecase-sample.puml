@@ -13,11 +13,14 @@ actor customer
 actor clerk
 
 UserCasePackage("checkout","买单") {
-    customer -- (checkout)
-    (checkout) .> (payment) : include
-    (help) .> (checkout) : extends
-    (checkout) -- clerk
+    customer -- (buy)
+    (buy) .> (payment) : include
+    (help) .> (buy) : extends
+    (buy) -- clerk
 }
+
+actor dfsf <<help>>
+dfsf --> checkout
 
 @enduml
 
