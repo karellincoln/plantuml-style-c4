@@ -241,6 +241,10 @@
 		],
 		"body": [
 			"@startuml $1",
+			"!include c4.puml\n",
+			"SiGNATURE(\"$2\")",
+			"drawFooter()",
+			"$3",
 			"$0",
 			"@enduml"
 		],
