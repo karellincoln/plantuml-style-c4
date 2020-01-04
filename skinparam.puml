@@ -6,7 +6,7 @@
 
 
 
-skinparam wrapWidth 200
+' skinparam wrapWidth 200
 skinparam maxMessageSize 150
 skinparam ComponentStyle uml2
 skinparam Shadowing false
